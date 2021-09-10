@@ -1,5 +1,20 @@
 function fibonacci(num) {
-  // type your code here
+  if (num == 0){
+    return 0
+  }
+  else {
+let a = 0
+let b = 1
+let result = b
+
+for (let i = 1; i < num; i++){
+  
+  result = a + b
+  a = b
+  b = result
+}
+return(result)
+}
 }
 
 if (require.main === module) {
@@ -22,3 +37,16 @@ module.exports = fibonacci;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+
+// let a = 0
+// let b = 1
+// let result = b
+
+// for (let i = 1; i < 100; i ++){
+//   console.log(result)
+//   result = a + b
+//   a = b
+//   b = result
+  
+// }
